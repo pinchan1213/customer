@@ -16,6 +16,11 @@ use Inertia\Inertia;
 |
 */
 
+/*
+書き方
+Inertia::render('コンポーネント名', [変数名]);
+*/
+
 Route::get('/', function () {
     return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
